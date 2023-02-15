@@ -1,0 +1,17 @@
+.navbar{
+    display: flex;
+    padding: 10px 100px;
+    font-weight: 600;
+    gap: 50px;
+}
+
+.itens{
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    align-items: center;
+}
+
+.itens li{
+    cursor: pointer;
+}
