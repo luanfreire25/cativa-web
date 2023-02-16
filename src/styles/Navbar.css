@@ -1,14 +1,14 @@
 .navbar{
     display: flex;
-    padding: 10px 100px;
+    padding: 5px 100px;
     font-weight: 600;
-    gap: 50px;
+    gap: 30px;
 }
 
 .itens{
     display: flex;
     list-style: none;
-    gap: 60px;
+    gap: 40px;
     align-items: center;
 }
 

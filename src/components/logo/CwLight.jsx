@@ -1,11 +1,15 @@
-import logo from "../../assets/cativaweb_light.png"
+import logo from "../../assets/cativaweb_light.png";
 
 const CwLight = () => {
   return (
     <>
-        <img style={{width: '180px', height: '180px'}} src={logo} alt="CativaWeb Light Logo" />
+      <img
+        style={{ width: "120px", height: "120px", margin: "-20px 0px" }}
+        src={logo}
+        alt="CativaWeb Light Logo"
+      />
     </>
-  )
-}
+  );
+};
 
-export default CwLight
+export default CwLight;

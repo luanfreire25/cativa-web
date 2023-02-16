@@ -1,4 +1,5 @@
 import "../../styles/Navbar.css"
+import SolicitarOrcamento from "../buttons/SolicitarOrcamento";
 
 const Navbar = ({cwLogo, switchBtn}) => {
 
@@ -13,6 +14,7 @@ const Navbar = ({cwLogo, switchBtn}) => {
           <li>FAQ</li>
           <li>Contato</li>
         </ul>
+        <SolicitarOrcamento/>
         {switchBtn}
       </div>
     );

@@ -1,11 +1,15 @@
-import logo from '../../assets/cativaweb_dark.png'
+import logo from "../../assets/cativaweb_dark.png";
 
 const CwDark = () => {
   return (
     <>
-        <img style={{width: '180px', height: '180px'}} src={logo} alt="CativaWeb Dark Logo" />
+      <img
+        style={{ width: "120px", height: "120px", margin: "-20px 0px" }}
+        src={logo}
+        alt="CativaWeb Dark Logo"
+      />
     </>
-  )
-}
+  );
+};
 
-export default CwDark
+export default CwDark;
