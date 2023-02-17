@@ -6,7 +6,8 @@ import CwLight from "./components/logo/CwLight";
 import Moon from "./icons/MoonIcon";
 import Sun from "./icons/SunIcon";
 
-function App() {
+const App = () => {
+  
   const [themeDark, setThemeDark] = useState(true);
 
   const themeControl = () => {
