@@ -3,7 +3,7 @@ import global_colors from "@/styles/global_colors";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html>
       <Head />
       <body style={{ background: `${global_colors.BACKGROUND_HTML}` }}>
         <Main />
