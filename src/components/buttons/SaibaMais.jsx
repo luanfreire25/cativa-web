@@ -1,8 +1,8 @@
 import Button from "@mui/material/Button";
-import Chat from "../icons/Chat";
 import style from "@/components/styles_components/Button.module.css";
+import WhiteWpp from "../icons/WhiteWpp";
 
-const FalarComEspecialista = ({ background, color }) => {
+const SaibaMais = ({ background, color }) => {
   return (
     <>
       <Button
@@ -10,17 +10,17 @@ const FalarComEspecialista = ({ background, color }) => {
         style={{
           background: `${background}`,
           color: `${color}`,
-          fontSize: "18px",
-          padding: "7px 25px",
-          borderRadius: "15px",
+          fontWeight: 500,
+          fontSize: "17px",
+          borderRadius: "10px",
         }}
         variant="outlined"
-        startIcon={<Chat />}
+        startIcon={<WhiteWpp />}
       >
-        Falar com especialista
+        Saiba Mais
       </Button>
     </>
   );
 };
 
-export default FalarComEspecialista;
+export default SaibaMais;

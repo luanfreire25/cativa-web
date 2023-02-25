@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Navbar from "@/components/navbar/Navbar";
 import HomeSection from "@/components/sections/principal_website/Home";
+import ServicosSection from "@/components/sections/principal_website/Servicos";
 
 const Home = () => {
   return (
@@ -15,8 +16,9 @@ const Home = () => {
       <main>
         <>
           <Navbar />
-          <div style={{margin: "80px"}}>
+          <div style={{ margin: "80px" }}>
             <HomeSection />
+            <ServicosSection/>
           </div>
         </>
       </main>
