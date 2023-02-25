@@ -1,11 +1,20 @@
-import styles from "@/components/styles_components/Logo.module.css"
+import styles from "@/components/styles_components/Logo.module.css";
 
-const Word = () => {
+const Word = ({ size, color, colorShadow }) => {
   return (
     <>
-        <span className={styles.logo}>cativaweb.</span>
+      <span
+        style={{
+          fontSize: `${size}`,
+          color: `${color}`,
+          textShadow: `0px 1px 1px ${colorShadow}`,
+        }}
+        className={styles.logo}
+      >
+        cativaweb.
+      </span>
     </>
-  )
-}
+  );
+};
 
-export default Word
+export default Word;

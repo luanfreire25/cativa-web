@@ -10,7 +10,7 @@ const Navbar = () => {
         padding: "12px",
       }}
     >
-      <Word/>
+      <Word size={"30px"} color={"#fff"} colorShadow={"#c9c9c9"}/>
     </div>
   );
 };
