@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Navbar from "@/components/navbar/Navbar";
+import HomeSection from "@/components/sections/principal_website/Home";
 
 const Home = () => {
   return (
@@ -14,6 +15,9 @@ const Home = () => {
       <main>
         <>
           <Navbar />
+          <div style={{margin: "80px"}}>
+            <HomeSection />
+          </div>
         </>
       </main>
     </>
