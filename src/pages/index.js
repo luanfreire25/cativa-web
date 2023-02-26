@@ -6,6 +6,7 @@ import MotivosSection from "@/components/sections/principal_website/Motivos";
 import IntegrantesSection from "@/components/sections/principal_website/Integrantes";
 import FAQSection from "@/components/sections/principal_website/FAQ";
 import DuvidasSection from "@/components/sections/principal_website/Duvidas";
+import RodapeSection from "@/components/sections/principal_website/Rodape";
 
 const Home = () => {
   return (
@@ -19,17 +20,15 @@ const Home = () => {
       <main>
         <>
           <Navbar />
-          <div style={{ margin: "80px" }}>
+          <div style={{ margin: "80px 80px 30px 80px" }}>
             <HomeSection />
             <ServicosSection />
             <MotivosSection />
-            <IntegrantesSection/>
-            <FAQSection/>
-            <DuvidasSection/>
-            <br/>
-            <br/>
-            <br/>
+            <IntegrantesSection />
+            <FAQSection />
+            <DuvidasSection />
           </div>
+          <RodapeSection />
         </>
       </main>
     </>
