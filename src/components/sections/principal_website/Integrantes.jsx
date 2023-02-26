@@ -1,6 +1,6 @@
 import SectionTitle from "@/components/title/SectionTitle";
-import luan_foto from "../../../../public/principal-website/integrantes/luan_foto.svg";
-import duda_foto from "../../../../public/principal-website/integrantes/duda_foto.svg";
+import luan_foto from "../../../../public/principal-website/integrantes/luan_foto.jpeg";
+import duda_foto from "../../../../public/principal-website/integrantes/duda_foto.jpeg";
 import IntegranteCard from "@/components/card/Integrante";
 import global_colors from "@/styles/global_colors";
 
@@ -14,10 +14,11 @@ const Integrantes = () => {
         />
         <div
           style={{
-            margin: "30px 0px",
+            margin: "25px 0px",
             display: "flex",
-            justifyContent: "space-around",
+            justifyContent: "space-evenly",
             gap: "30px",
+            flexWrap: "wrap",
           }}
         >
           <IntegranteCard
