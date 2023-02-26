@@ -2,6 +2,8 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import style from "@/components/styles_components/Title.module.css";
+import global_colors from "@/styles/global_colors";
 import { useState } from "react";
 
 const FAQ = () => {
@@ -34,7 +36,7 @@ const FAQ = () => {
       id: 5,
       titulo: "Quanto cobramos pelo desenvolvimento dos sites?",
       descricao:
-        "Os valores variam de acordo com o tipo e o tamanho do projeto. Por isso, preparamos um orçamento personalizado para cada cliente. Dessa forma, conseguimos entregar um site que realmente atende as suas necessidades.Finalize o formulário ou nos envie uma mensagem direta para que a nossa equipe possa entrar em contato com você e te informar os valores para o desenvolvimento do seu projeto.",
+        "Os valores variam de acordo com o tipo e o tamanho do projeto. Por isso, preparamos um orçamento personalizado para cada cliente. Dessa forma, conseguimos entregar um site que realmente atende as suas necessidades. Finalize o formulário ou nos envie uma mensagem direta para que a nossa equipe possa entrar em contato com você e te informar os valores para o desenvolvimento do seu projeto.",
     },
     {
       id: 6,
@@ -54,17 +56,32 @@ const FAQ = () => {
     <>
       <div style={{ margin: "30px 0px" }}>
         {itensFAQ.map((item) => (
-          <div style={{ margin: "5px 0px" }} key={item.id}>
+          <div
+            className={style.faq}
+            style={{ margin: "5px 0px" }}
+            key={item.id}
+          >
             <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <span>{item.titulo}</span>
+                <span
+                  style={{
+                    color: `${global_colors.PRIMARY_COLOR}`,
+                    fontWeight: 500,
+                  }}
+                >
+                  {item.titulo}
+                </span>
               </AccordionSummary>
               <AccordionDetails>
-                <span>{item.descricao}</span>
+                <span
+                  style={{ fontSize: "15px", color: `${global_colors.BLACK}` }}
+                >
+                  {item.descricao}
+                </span>
               </AccordionDetails>
             </Accordion>
           </div>
