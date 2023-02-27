@@ -26,7 +26,7 @@ const Integrante = ({
           filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.30))"
         }}
       >
-        <Image width={290} height={240} src={foto} alt="integrante" />
+        <Image placeholder="blur" width={290} height={240} src={foto} alt="integrante" />
         <CardContent>
           <div className={style.integrantesNameDesc}>
             <span

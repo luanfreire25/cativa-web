@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Poppins:wght@200;400;500&family=Raleway:wght@400;500&display=swap');
 
 .BtnFalarCEsp{
-    font-family: "Poppins", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-weight: 400;
     text-transform: none;
     border: none;
@@ -10,7 +10,7 @@
 }
 
 .BtnFalarCEsp:hover{
-    border: none;
-    transition: 0.3s all ease;
-    transform: scale(1.02);
+    border: none !important; 
+    transition: 0.3s all ease !important;
+    transform: scale(1.02) !important;
 }
