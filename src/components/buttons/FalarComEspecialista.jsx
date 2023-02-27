@@ -15,6 +15,7 @@ const FalarComEspecialista = ({ background, color }) => {
           borderRadius: "15px",
           border: "none",
           transition: "all 0.3s ease",
+          textTransform: "none",
         }}
         variant="outlined"
         startIcon={<Chat />}

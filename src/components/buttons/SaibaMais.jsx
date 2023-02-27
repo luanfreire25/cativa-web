@@ -15,6 +15,7 @@ const SaibaMais = ({ background, color }) => {
           borderRadius: "10px",
           border: "none",
           transition: "all 0.3s ease",
+          textTransform: "none",
         }}
         variant="outlined"
         startIcon={<WhiteWpp />}
