@@ -13,6 +13,8 @@ const SaibaMais = ({ background, color }) => {
           fontWeight: 500,
           fontSize: "17px",
           borderRadius: "10px",
+          border: "none",
+          transition: "all 0.3s ease",
         }}
         variant="outlined"
         startIcon={<WhiteWpp />}
