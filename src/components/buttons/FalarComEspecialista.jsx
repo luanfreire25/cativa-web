@@ -13,6 +13,8 @@ const FalarComEspecialista = ({ background, color }) => {
           fontSize: "18px",
           padding: "7px 25px",
           borderRadius: "15px",
+          border: "none",
+          transition: "all 0.3s ease",
         }}
         variant="outlined"
         startIcon={<Chat />}
