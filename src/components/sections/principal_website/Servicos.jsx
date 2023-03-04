@@ -3,14 +3,16 @@ import ServiceCard from "@/components/card/Servicos";
 import Laptop from "@/components/icons/Laptop";
 import Grafico from "@/components/icons/Grafico";
 import Pages from "@/components/icons/Pages";
+import global_colors from "@/styles/global_colors";
 
 const Servicos = () => {
   return (
     <>
-      <div style={{ margin: "50px 0px" }}>
+      <div style={{ margin: "50px 0px", background: `${global_colors.BLACK}` }}>
         <SectionTitle
           firstLine={"Sua melhor opção!"}
           secondLine={"Qual é o seu objetivo digital hoje?"}
+          colorSL={global_colors.SECONDARY_COLOR}
         />
         <div
           style={{

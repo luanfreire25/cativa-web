@@ -1,7 +1,7 @@
 import style from "@/components/styles_components/Title.module.css";
 import global_colors from "@/styles/global_colors";
 
-const SectionTitle = ({ firstLine, secondLine }) => {
+const SectionTitle = ({ firstLine, secondLine, colorSL }) => {
   return (
     <>
       <div className={style.sectionTitle}>
@@ -9,7 +9,7 @@ const SectionTitle = ({ firstLine, secondLine }) => {
           {firstLine}
         </span>
         <br />
-        <span style={{ color: `${global_colors.BLACK}`, fontSize: "23px" }}>
+        <span style={{ color: `${colorSL}`, fontSize: "23px" }}>
           {secondLine}
         </span>
       </div>

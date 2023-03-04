@@ -10,7 +10,7 @@ const SaibaMais = ({ background, color }) => {
         style={{
           background: `${background}`,
           color: `${color}`,
-          fontWeight: 500,
+          fontWeight: 600,
           fontSize: "17px",
           borderRadius: "10px",
           border: "none",

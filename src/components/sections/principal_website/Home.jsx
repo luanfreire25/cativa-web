@@ -19,13 +19,13 @@ const Home = () => {
           style={{ alignSelf: "center", color: `${global_colors.BLACK}` }}
           className={style.homeText}
         >
-          <span style={{ fontSize: "45px" }}>
+          <span style={{ fontSize: "45px", lineHeight: "50px" }}>
             Atraia e encante
             <br />
             os seus clientes na <br />
             <b>primeira visita!</b>
           </span>
-          <p style={{ fontSize: "18px" }}>
+          <p style={{ fontSize: "17px" }}>
             Do projeto ao desenvolvimento,
             <br />
             gerenciamos sites de alto impacto que
