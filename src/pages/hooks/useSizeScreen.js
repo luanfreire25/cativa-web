@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 
-const useSizeScreen = () => {
+export const useSizeScreen = () => {
+    
   const initialState = {
-    width: window.screen.width,
-    height: window.screen.height,
+    width: 0,
+    height: 0,
   };
 
   const [size, setSize] = useState(initialState);
@@ -25,9 +26,11 @@ const useSizeScreen = () => {
   useEffect(() => {
     changeSize();
     window.addEventListener("resize", changeSize);
+
+    return () => {
+      window.removeEventListener("resize", changeSize);
+    };
   }, []);
 
   return size;
 };
-
-export default useSizeScreen;

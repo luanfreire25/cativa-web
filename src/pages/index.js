@@ -7,7 +7,7 @@ import IntegrantesSection from "@/components/sections/principal_website/Integran
 import FAQSection from "@/components/sections/principal_website/FAQ";
 import DuvidasSection from "@/components/sections/principal_website/Duvidas";
 import RodapeSection from "@/components/sections/principal_website/Rodape";
-import useSizeScreen from "@/hooks/useSizeScreen"
+import { useSizeScreen } from "./hooks/useSizeScreen";
 
 const Home = () => {
 
@@ -24,8 +24,8 @@ const Home = () => {
       <main>
         <>
           <Navbar />
+          {width}x{height}
           <div style={{ margin: "80px 80px 30px 80px" }}>
-            {width} x {height}
             <HomeSection />
           </div>
           <ServicosSection />
