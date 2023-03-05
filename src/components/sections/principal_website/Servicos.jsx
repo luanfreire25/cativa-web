@@ -8,7 +8,13 @@ import global_colors from "@/styles/global_colors";
 const Servicos = () => {
   return (
     <>
-      <div style={{ margin: "50px 0px", background: `${global_colors.BLACK}` }}>
+      <div
+        style={{
+          margin: "50px 0px 0px 0px",
+          background: `${global_colors.BLACK}`,
+          padding: "40px 50px",
+        }}
+      >
         <SectionTitle
           firstLine={"Sua melhor opção!"}
           secondLine={"Qual é o seu objetivo digital hoje?"}

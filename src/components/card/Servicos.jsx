@@ -7,24 +7,31 @@ const Servicos = ({ icone, titulo, descricao }) => {
     <>
       <div
         style={{
-          background: `${global_colors.SECONDARY_COLOR}`,
+          background: "rgba(255,255,255,0.1)",
+          color: `${global_colors.SECONDARY_COLOR}`,
           textAlign: "center",
           padding: "20px 50px",
           borderRadius: "30px",
           height: "auto",
-          filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+          boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
           width: "250px",
-          alignSelf: "center"
+          alignSelf: "center",
         }}
       >
         {icone}
-        <br /><br/>
-        <span className={style.serviceText} style={{ fontSize: "20px", fontWeight: 500 }}>
+        <br />
+        <br />
+        <span
+          className={style.serviceText}
+          style={{ fontSize: "20px", fontWeight: 600 }}
+        >
           {titulo}
         </span>
         <br />
         <br />
-        <span className={style.serviceText} style={{fontSize: "14px"}}>{descricao}</span>
+        <span className={style.serviceText} style={{ fontSize: "14px" }}>
+          {descricao}
+        </span>
         <br />
         <br />
         <SaibaMais

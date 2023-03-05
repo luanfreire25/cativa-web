@@ -11,15 +11,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.serviceText, .reasonsText{
+.serviceText, .reasonsText, .motivosText{
     font-family: "Poppins", sans-serif;
 }
 
 .integrantesNameDesc, .footer{
-    font-family: "Work Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: center;
 }
 
 .integrantesProf, .faq, .duvidas{
-    font-family: "Work Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
 }

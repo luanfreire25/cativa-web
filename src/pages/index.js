@@ -22,8 +22,10 @@ const Home = () => {
           <Navbar />
           <div style={{ margin: "80px 80px 30px 80px" }}>
             <HomeSection />
-            <ServicosSection />
-            <MotivosSection />
+          </div>
+          <ServicosSection />
+          <MotivosSection />
+          <div style={{ margin: "80px 80px 30px 80px" }}>
             <IntegrantesSection />
             <FAQSection />
             <DuvidasSection />
