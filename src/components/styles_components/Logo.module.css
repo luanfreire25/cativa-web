@@ -1,6 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Poppins:wght@200;400;500&family=Raleway:wght@400;500&display=swap');
+@font-face {
+    font-family: 'CativaWeb';
+    src: url('../../fonts/Fredoka/static/Fredoka/Fredoka-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}  
 
 .logo{
-    font-family: "Fredoka", sans-serif;
-    font-weight: 600;
+    font-family: 'CativaWeb', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }

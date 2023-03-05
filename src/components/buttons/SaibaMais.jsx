@@ -10,12 +10,14 @@ const SaibaMais = ({ background, color }) => {
         style={{
           background: `${background}`,
           color: `${color}`,
-          fontWeight: 500,
+          fontWeight: 600,
+          padding: "5px 25px",
           fontSize: "17px",
           borderRadius: "10px",
           border: "none",
           transition: "all 0.3s ease",
           textTransform: "none",
+          filter: "none",
         }}
         variant="outlined"
         startIcon={<WhiteWpp />}

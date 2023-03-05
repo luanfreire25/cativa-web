@@ -12,15 +12,15 @@ const Duvidas = () => {
           textAlign: "center",
           background: `${global_colors.SECONDARY_COLOR}`,
           color: `${global_colors.BLACK}`,
-          margin: "30px 180px",
-          padding: "25px 160px",
+          margin: "30px none",
+          padding: "25px",
           borderRadius: "20px",
           filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.30))",
         }}
       >
         <Image width={70} height={70} src={chat_icon} alt="chat icon" />
         <br />
-        <span style={{ fontSize: "23px", fontWeight: 500 }}>
+        <span style={{ fontSize: "23px", fontWeight: 700 }}>
           Tem alguma dúvida?
         </span>
         <br />
