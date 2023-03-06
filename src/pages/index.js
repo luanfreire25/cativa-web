@@ -23,13 +23,24 @@ const Home = () => {
       <main>
         <>
           <Navbar />
-          <div style={{ margin: "80px 80px 30px 80px" }}>
-            {width}x{height}
+          <div
+            style={{
+              margin: `${
+                width <= 425 ? "40px 40px 15px 40px" : "80px 80px 30px 80px"
+              }`,
+            }}
+          >
             <HomeSection />
           </div>
           <ServicosSection />
           <MotivosSection />
-          <div style={{ margin: "80px 80px 30px 80px" }}>
+          <div
+            style={{
+              margin: `${
+                width <= 425 ? "40px 40px 15px 40px" : "80px 80px 30px 80px"
+              }`,
+            }}
+          >
             <IntegrantesSection />
             <FAQSection />
             <DuvidasSection />

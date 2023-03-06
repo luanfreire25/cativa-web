@@ -2,8 +2,11 @@ import Image from "next/image";
 import chat_icon from "../../../../public/principal-website/duvidas/chat_laranja.svg";
 import global_colors from "@/styles/global_colors";
 import style from "@/components/styles_components/Title.module.css";
+import { useSizeScreen } from "@/hooks/useSizeScreen";
 
 const Duvidas = () => {
+  const { height, width } = useSizeScreen();
+
   return (
     <>
       <div
@@ -20,12 +23,22 @@ const Duvidas = () => {
       >
         <Image width={70} height={70} src={chat_icon} alt="chat icon" />
         <br />
-        <span style={{ fontSize: "23px", fontWeight: 700 }}>
+        <span
+          style={{
+            fontSize: `${width <= 375 ? "18px" : "23px"}`,
+            fontWeight: 700,
+          }}
+        >
           Tem alguma dúvida?
         </span>
         <br />
         <br />
-        <span style={{ fontWeight: 400 }}>
+        <span
+          style={{
+            fontWeight: 400,
+            fontSize: `${width <= 375 ? "14px" : "16px"}`,
+          }}
+        >
           Tem mais alguma outra dúvida que não foi respondida? Entre em contato
           com a nossa equipe clicando no botão de WhatsApp!
         </span>

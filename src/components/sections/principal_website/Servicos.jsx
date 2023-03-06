@@ -4,15 +4,18 @@ import Laptop from "@/components/icons/Laptop";
 import Grafico from "@/components/icons/Grafico";
 import Pages from "@/components/icons/Pages";
 import global_colors from "@/styles/global_colors";
+import { useSizeScreen } from "@/hooks/useSizeScreen";
 
 const Servicos = () => {
+  const { width, height } = useSizeScreen();
+
   return (
     <>
       <div
         style={{
           margin: "50px 0px 0px 0px",
           background: `${global_colors.BLACK}`,
-          padding: "40px 50px",
+          padding: `${width <= 375 ? "20px 25px" : "40px 50px"}`,
         }}
       >
         <SectionTitle

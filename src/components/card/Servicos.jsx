@@ -1,8 +1,11 @@
 import SaibaMais from "../buttons/SaibaMais";
 import global_colors from "@/styles/global_colors";
 import style from "@/components/styles_components/Title.module.css";
+import { useSizeScreen } from "@/hooks/useSizeScreen";
 
 const Servicos = ({ icone, titulo, descricao }) => {
+  const { width, height } = useSizeScreen();
+
   return (
     <>
       <div
@@ -10,7 +13,7 @@ const Servicos = ({ icone, titulo, descricao }) => {
           background: "rgba(255,255,255,0.1)",
           color: `${global_colors.SECONDARY_COLOR}`,
           textAlign: "center",
-          padding: "20px 50px",
+          padding: `${width <= 375 ? "13px 25px" : "20px 50px"}`,
           borderRadius: "30px",
           height: "auto",
           boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
@@ -23,13 +26,19 @@ const Servicos = ({ icone, titulo, descricao }) => {
         <br />
         <span
           className={style.serviceText}
-          style={{ fontSize: "20px", fontWeight: 600 }}
+          style={{
+            fontSize: `${width <= 320 ? "18px" : "20px"}`,
+            fontWeight: 600,
+          }}
         >
           {titulo}
         </span>
         <br />
         <br />
-        <span className={style.serviceText} style={{ fontSize: "14px" }}>
+        <span
+          className={style.serviceText}
+          style={{ fontSize: `${width <= 320 ? "12px" : "14px"}` }}
+        >
           {descricao}
         </span>
         <br />
