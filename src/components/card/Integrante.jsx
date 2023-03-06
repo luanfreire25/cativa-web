@@ -50,7 +50,7 @@ const Integrante = ({
             <span
               style={{
                 fontSize: `${
-                  width <= 375 ? "22px" : width <= 414 ? "25px" : "30px"
+                  width <= 375 ? "19.5px" : width <= 414 ? "25px" : "30px"
                 }`,
                 color: `${color1}`,
                 fontWeight: 600,
@@ -62,7 +62,7 @@ const Integrante = ({
             <span
               style={{
                 fontSize: `${
-                  width <= 375 ? "12px" : width <= 414 ? "14px" : "16px"
+                  width <= 375 ? "11px" : width <= 414 ? "14px" : "16px"
                 }`,
                 fontWeight: 600,
               }}
