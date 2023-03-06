@@ -11,7 +11,7 @@ const Motivos = ({ numero, titulo, descricao }) => {
         className={style.motivosText}
         style={{
           color: `${global_colors.SECONDARY_COLOR}`,
-          width: `${width <= 320 ? "250px" : width <= 375 ? "280px" : "350px"}`,
+          width: `${width <= 320 ? "250px" : width <= 414 ? "280px" : "350px"}`,
           padding: `${
             width <= 320 ? "10px 15px" : width <= 425 ? "10px 30px" : "10px"
           }`,

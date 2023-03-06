@@ -25,7 +25,9 @@ const Duvidas = () => {
         <br />
         <span
           style={{
-            fontSize: `${width <= 425 ? "18px" : "23px"}`,
+            fontSize: `${
+              width <= 375 ? "16.5px" : width <= 425 ? "18px" : "23px"
+            }`,
             fontWeight: 700,
           }}
         >
@@ -36,7 +38,9 @@ const Duvidas = () => {
         <span
           style={{
             fontWeight: 400,
-            fontSize: `${width <= 425 ? "14px" : "16px"}`,
+            fontSize: `${
+              width <= 375 ? "12.5px" : width <= 425 ? "14px" : "16px"
+            }`,
           }}
         >
           Tem mais alguma outra dúvida que não foi respondida? Entre em contato
