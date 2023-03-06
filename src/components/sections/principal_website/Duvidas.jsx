@@ -44,7 +44,7 @@ const Duvidas = () => {
           }}
         >
           Tem mais alguma outra dúvida que não foi respondida? Entre em contato
-          com a nossa equipe clicando no botão de WhatsApp!
+          com a nossa equipe clicando no botão de chat laranja.
         </span>
       </div>
     </>
