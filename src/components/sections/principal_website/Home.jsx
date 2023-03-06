@@ -3,8 +3,11 @@ import Image from "next/image";
 import Img from "../../../../public/principal-website/home/image_home.svg";
 import style from "@/components/styles_components/Home.module.css";
 import global_colors from "@/styles/global_colors";
+import { useSizeScreen } from "@/hooks/useSizeScreen";
 
 const Home = () => {
+  const { width, height } = useSizeScreen();
+
   return (
     <>
       <div
@@ -16,16 +19,47 @@ const Home = () => {
         }}
       >
         <div
-          style={{ alignSelf: "center", color: `${global_colors.BLACK}` }}
+          style={{
+            alignSelf: "center",
+            color: `${global_colors.BLACK}`,
+            textAlign: `${width <= 768 ? "center" : "start"}`,
+          }}
           className={style.homeText}
         >
-          <span style={{ fontSize: "45px", lineHeight: "50px" }}>
+          <span
+            style={{
+              fontSize: `${
+                width <= 320
+                  ? "25px"
+                  : width <= 375
+                  ? "30px"
+                  : width <= 425
+                  ? "35px"
+                  : "45px"
+              }`,
+              lineHeight: `${
+                width <= 320
+                  ? "25px"
+                  : width <= 375
+                  ? "28px"
+                  : width <= 425
+                  ? "35px"
+                  : "50px"
+              }`,
+            }}
+          >
             Atraia e encante
             <br />
             os seus clientes na <br />
             <b>primeira visita!</b>
           </span>
-          <p style={{ fontSize: "17px" }}>
+          <p
+            style={{
+              fontSize: `${
+                width <= 320 ? "11px" : width <= 425 ? "14px" : "17px"
+              }`,
+            }}
+          >
             Do projeto ao desenvolvimento,
             <br />
             gerenciamos sites de alto impacto que
@@ -48,8 +82,12 @@ const Home = () => {
             src={Img}
             alt="people image"
             quality={100}
-            width={436}
-            height={366}
+            width={
+              width <= 375 ? 226 : width <= 425 ? 276 : width <= 768 ? 376 : 436
+            }
+            height={
+              width <= 375 ? 156 : width <= 425 ? 206 : width <= 768 ? 306 : 366
+            }
           />
         </div>
       </div>

@@ -3,6 +3,7 @@ import style from "@/components/styles_components/Title.module.css";
 import Word from "../logo/Word";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
+import { useSizeScreen } from "@/hooks/useSizeScreen";
 
 const Integrante = ({
   foto,
@@ -15,6 +16,8 @@ const Integrante = ({
   sizeLogo,
   colorShadow,
 }) => {
+  const { width, height } = useSizeScreen();
+
   return (
     <>
       <Card
@@ -28,8 +31,8 @@ const Integrante = ({
       >
         <Image
           placeholder="blur"
-          width={380}
-          height={220}
+          width={width <= 375 ? 300 : width <= 414 ? 340 : 380}
+          height={width <= 375 ? 180 : width <= 414 ? 200 : 220}
           src={foto}
           alt="integrante"
         />
@@ -50,7 +53,7 @@ const Integrante = ({
             <span>{descricao}</span>
             <br />
             <br />
-            <div style={{textAlign: "center"}}>
+            <div style={{ textAlign: "center" }}>
               <Word size={sizeLogo} color={color1} colorShadow={colorShadow} />
             </div>
           </div>

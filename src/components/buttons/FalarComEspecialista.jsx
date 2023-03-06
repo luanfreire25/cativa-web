@@ -1,8 +1,11 @@
 import Button from "@mui/material/Button";
 import Chat from "../icons/Chat";
 import style from "@/components/styles_components/Button.module.css";
+import { useSizeScreen } from "@/hooks/useSizeScreen";
 
 const FalarComEspecialista = ({ background, color }) => {
+  const { width, height } = useSizeScreen();
+
   return (
     <>
       <Button
@@ -10,7 +13,7 @@ const FalarComEspecialista = ({ background, color }) => {
         style={{
           background: `${background}`,
           color: `${color}`,
-          fontSize: "18px",
+          fontSize: `${width <= 375 ? "14px" : width <= 375 ? "15px" : "18px"}`,
           padding: "7px 25px",
           borderRadius: "15px",
           border: "none",
