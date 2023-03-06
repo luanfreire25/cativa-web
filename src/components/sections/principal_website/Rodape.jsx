@@ -5,8 +5,11 @@ import WhiteMail from "@/components/icons/WhiteMail";
 import Word from "@/components/logo/Word";
 import global_colors from "@/styles/global_colors";
 import style from "@/components/styles_components/Title.module.css";
+import { useSizeScreen } from "@/hooks/useSizeScreen";
 
 const Rodape = () => {
+  const { width, height } = useSizeScreen();
+
   return (
     <>
       <div
@@ -17,7 +20,7 @@ const Rodape = () => {
         }}
       >
         <Word
-          size={"35px"}
+          size={width <= 425 ? "30px" : "35px"}
           color={global_colors.SECONDARY_COLOR}
           colorShadow={"#C9C9C9"}
         />
@@ -30,13 +33,16 @@ const Rodape = () => {
             margin: "15px 0px",
           }}
         >
-          <RedeSocial icone={<WhiteFb />} />
-          <RedeSocial icone={<WhiteInsta />} />
-          <RedeSocial icone={<WhiteMail />} />
+          <RedeSocial icone={<WhiteFb />} link={"https://www.facebook.com/cativaweb"} />
+          <RedeSocial icone={<WhiteInsta />} link={"https://www.instagram.com/cativaweb/"} />
+          <RedeSocial icone={<WhiteMail />} link={"mailto:cativaweb22@gmail.com?subject=[CativaWeb] <<SEU NOME ou EMPRESA>> <<ASSUNTO>>&body=<<DIGITE AQUI O MOTIVO DE NOS CONTACTAR>>"}/>
         </div>
         <span
           className={style.footer}
-          style={{ color: `${global_colors.SECONDARY_COLOR}` }}
+          style={{
+            color: `${global_colors.SECONDARY_COLOR}`,
+            fontSize: `${width <= 425 ? "12px" : "16px"}`,
+          }}
         >
           CativaWeb 2023 - Todos os direitos reservados
         </span>

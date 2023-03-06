@@ -1,19 +1,25 @@
 import IconButton from "@mui/material/IconButton";
 import global_colors from "@/styles/global_colors";
 
-const RedeSocial = ({ icone }) => {
+const RedeSocial = ({ icone, link }) => {
   return (
     <>
-      <IconButton
-        style={{
-          background: `${global_colors.PRIMARY_COLOR}`,
-          color: `${global_colors.SECONDARY_COLOR}`,
-        }}
-        aria-label="upload picture"
-        component="label"
+      <a
+        href={link}
+        target="_blank"
+        style={{ textDecoration: "none !important" }}
       >
-        {icone}
-      </IconButton>
+        <IconButton
+          style={{
+            background: `${global_colors.PRIMARY_COLOR}`,
+            color: `${global_colors.SECONDARY_COLOR}`,
+          }}
+          aria-label="upload picture"
+          component="label"
+        >
+          {icone}
+        </IconButton>
+      </a>
     </>
   );
 };

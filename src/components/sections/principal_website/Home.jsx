@@ -29,18 +29,18 @@ const Home = () => {
           <span
             style={{
               fontSize: `${
-                width <= 320
+                width <= 363
                   ? "25px"
-                  : width <= 375
+                  : width <= 414
                   ? "30px"
                   : width <= 425
                   ? "35px"
                   : "45px"
               }`,
               lineHeight: `${
-                width <= 320
+                width <= 363
                   ? "25px"
-                  : width <= 375
+                  : width <= 414
                   ? "28px"
                   : width <= 425
                   ? "35px"
@@ -56,7 +56,13 @@ const Home = () => {
           <p
             style={{
               fontSize: `${
-                width <= 320 ? "11px" : width <= 425 ? "14px" : "17px"
+                width <= 343
+                  ? "11.5px"
+                  : width <= 375
+                  ? "12.5px"
+                  : width <= 425
+                  ? "14px"
+                  : "17px"
               }`,
             }}
           >
