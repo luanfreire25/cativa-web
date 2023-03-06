@@ -13,7 +13,7 @@ const Servicos = ({ icone, titulo, descricao }) => {
           background: "rgba(255,255,255,0.1)",
           color: `${global_colors.SECONDARY_COLOR}`,
           textAlign: "center",
-          padding: `${width <= 375 ? "13px 25px" : "20px 50px"}`,
+          padding: `${width <= 425 ? "13px 25px" : "20px 50px"}`,
           borderRadius: "30px",
           height: "auto",
           boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",

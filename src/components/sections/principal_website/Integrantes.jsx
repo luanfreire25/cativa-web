@@ -25,9 +25,6 @@ const Integrantes = () => {
             foto={luan_foto}
             nome={"Luan Freire"}
             profissao={"Software Developer"}
-            descricao={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui tortor, euismod pharetra sollicitudin pharetra, tincidunt nec leo."
-            }
             background={global_colors.BLACK}
             color1={global_colors.PRIMARY_COLOR}
             color2={global_colors.SECONDARY_COLOR}
@@ -37,9 +34,6 @@ const Integrantes = () => {
             foto={duda_foto}
             nome={"Duda Cascaez"}
             profissao={"UI/UX Designer"}
-            descricao={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui tortor, euismod pharetra sollicitudin pharetra, tincidunt nec leo."
-            }
             background={global_colors.PRIMARY_COLOR}
             color1={global_colors.SECONDARY_COLOR}
             color2={global_colors.BLACK}
