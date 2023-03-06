@@ -17,6 +17,7 @@ const FalarComEspecialista = ({ background, color }) => {
           padding: "7px 25px",
           borderRadius: "15px",
           border: "none",
+          fontweight: 700,
           transition: "all 0.3s ease",
           textTransform: "none",
         }}
