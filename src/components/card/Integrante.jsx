@@ -22,7 +22,13 @@ const Integrante = ({
     <>
       <Card
         sx={{
-          width: 380,
+          width: `${
+            width <= 375
+              ? "260px !important"
+              : width <= 414
+              ? "280px !important"
+              : "320px !important"
+          }`,
           borderRadius: "30px",
           background: `${background}`,
           color: `${color2}`,
@@ -31,26 +37,38 @@ const Integrante = ({
       >
         <Image
           placeholder="blur"
-          width={width <= 375 ? 300 : width <= 414 ? 340 : 380}
-          height={width <= 375 ? 180 : width <= 414 ? 200 : 220}
+          width={width <= 375 ? 260 : width <= 414 ? 280 : 320}
+          height={width <= 375 ? 230 : width <= 414 ? 250 : 290}
           src={foto}
           alt="integrante"
         />
         <CardContent>
           <div
             className={style.integrantesNameDesc}
-            style={{ textAlign: "start", padding: "10px 30px" }}
+            style={{ textAlign: "center", padding: "0px 30px" }}
           >
             <span
-              style={{ fontSize: "30px", color: `${color1}`, fontWeight: 600 }}
+              style={{
+                fontSize: `${
+                  width <= 375 ? "22px" : width <= 414 ? "25px" : "30px"
+                }`,
+                color: `${color1}`,
+                fontWeight: 600,
+              }}
             >
               {nome}
             </span>
             <br />
-            <span style={{ fontWeight: 600 }}>{profissao}</span>
-            <br />
-            <br />
-            <span>{descricao}</span>
+            <span
+              style={{
+                fontSize: `${
+                  width <= 375 ? "12px" : width <= 414 ? "14px" : "16px"
+                }`,
+                fontWeight: 600,
+              }}
+            >
+              {profissao}
+            </span>
             <br />
             <br />
             <div style={{ textAlign: "center" }}>
