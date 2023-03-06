@@ -32,7 +32,7 @@ const Home = () => {
           <div
             style={{
               margin: `${
-                width <= 425 ? "40px 40px 15px 40px" : "80px 80px 30px 80px"
+                width <= 585 ? "40px 40px 15px 40px" : "80px 80px 30px 80px"
               }`,
             }}
           >
@@ -43,7 +43,7 @@ const Home = () => {
           <div
             style={{
               margin: `${
-                width <= 425 ? "40px 40px 15px 40px" : "80px 80px 30px 80px"
+                width <= 585 ? "40px 40px 15px 40px" : "80px 80px 30px 80px"
               }`,
             }}
           >

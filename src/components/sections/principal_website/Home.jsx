@@ -33,7 +33,7 @@ const Home = () => {
                   ? "25px"
                   : width <= 414
                   ? "30px"
-                  : width <= 425
+                  : width <= 505
                   ? "35px"
                   : "45px"
               }`,
@@ -42,7 +42,7 @@ const Home = () => {
                   ? "25px"
                   : width <= 414
                   ? "28px"
-                  : width <= 425
+                  : width <= 505
                   ? "35px"
                   : "50px"
               }`,
@@ -60,7 +60,7 @@ const Home = () => {
                   ? "11.5px"
                   : width <= 375
                   ? "12.5px"
-                  : width <= 425
+                  : width <= 505
                   ? "14px"
                   : "17px"
               }`,
